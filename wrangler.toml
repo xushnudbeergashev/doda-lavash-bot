@@ -14,7 +14,7 @@ fallthrough = true
 # Buyurtmalar uchun KV. "npx wrangler kv namespace create ORDERS" buyrug'i bergan id ni shu yerga qo'ying
 [[kv_namespaces]]
 binding = "ORDERS"
-id = "BU_YERGA_KV_ID"
+id = "72f23d7e4b714004b14e06f9993d0387"
 
 
 # Taom rasmlari: public/img/ papkasiga qo'ying, menu.js da img: "/img/fayl.jpg" deb yozing
