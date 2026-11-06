@@ -22,6 +22,7 @@ Cloudflare Workers'da ishlaydi (xuddi @hadyaga_mushuk_bot kabi). Bitta Worker: b
 
 ## Avtomatik yangilanish (GitHub → Cloudflare)
 Cloudflare'da Worker'ga shu repo ulangan (Settings → Builds). `main` ga har bir push botni o'zi qayta joylaydi.
+Yangilanish 1–2 daqiqada tugaydi; holatini Cloudflare → Worker → Deployments bo'limida ko'rish mumkin.
 Maxfiy narsalar repo'da yo'q: `BOT_TOKEN`, `WEBHOOK_SECRET` (secret) va `ADMIN_CHAT_ID` (variable) Cloudflare panelida saqlanadi.
 
 ## O'rnatish (bir marta, qo'lda)
