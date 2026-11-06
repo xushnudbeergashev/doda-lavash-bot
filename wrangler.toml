@@ -1,0 +1,22 @@
+name = "doda-lavash-bot"
+main = "src/worker.js"
+compatibility_date = "2025-06-01"
+# ADMIN_CHAT_ID Cloudflare panelida saqlanadi (Settings → Variables and Secrets).
+# keep_vars = true: deploy paytida panel sozlamalari o'chib ketmaydi.
+keep_vars = true
+
+# app.html faylini matn sifatida import qilish
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true
+
+# Buyurtmalar uchun KV. "npx wrangler kv namespace create ORDERS" buyrug'i bergan id ni shu yerga qo'ying
+[[kv_namespaces]]
+binding = "ORDERS"
+id = "BU_YERGA_KV_ID"
+
+
+# Taom rasmlari: public/img/ papkasiga qo'ying, menu.js da img: "/img/fayl.jpg" deb yozing
+[assets]
+directory = "./public"
